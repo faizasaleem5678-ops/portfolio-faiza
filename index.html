@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faiza Saleem | Creative Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Montserrat',sans-serif;
+  color:white;
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
+              url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f');
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+nav{
+  position:fixed;top:0;width:100%;padding:15px;
+  text-align:center;background:rgba(0,0,0,0.6);
+}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:500}
+nav a:hover{color:#00d4ff}
+
+header{
+  height:100vh;display:flex;flex-direction:column;
+  justify-content:center;align-items:center;text-align:center;
+}
+header h1{font-size:50px;font-weight:700}
+.typing{margin-top:10px;color:#00d4ff;font-size:22px}
+
+section{padding:80px 20px;max-width:1100px;margin:auto}
+
+.card{
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+  padding:30px;border-radius:20px;margin-bottom:25px;
+  border:1px solid rgba(255,255,255,0.1);
+}
+
+h2{margin-bottom:20px;font-size:30px}
+
+/* Gallery */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+.gallery-item{
+  position:relative;
+  overflow:hidden;
+  border-radius:15px;
+}
+.gallery-item img{
+  width:100%;
+  border-radius:15px;
+  transition:0.4s;
+}
+.gallery-item:hover img{
+  transform:scale(1.1);
+}
+.overlay{
+  position:absolute;
+  bottom:0;
+  width:100%;
+  background:rgba(0,0,0,0.7);
+  text-align:center;
+  padding:10px;
+  opacity:0;
+  transition:0.4s;
+}
+.gallery-item:hover .overlay{
+  opacity:1;
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.service-box{
+  padding:25px;border-radius:15px;
+  background:linear-gradient(135deg,#00d4ff,#3b82f6);
+  color:#000;
+  font-weight:500;
+  transition:0.3s;
+}
+.service-box:hover{transform:translateY(-10px)}
+
+.skills{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:15px;
+}
+
+.skill-box{
+  background:#1e293b;
+  padding:15px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.btn{
+  display:inline-block;margin-top:15px;
+  padding:12px 25px;border-radius:30px;
+  background:#00d4ff;color:#000;text-decoration:none;font-weight:600;
+}
+
+footer{text-align:center;padding:20px;background:rgba(0,0,0,0.6)}
+</style>
+</head>
+
+<body>
+
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#services">Services</a>
+<a href="#skills">Skills</a>
+<a href="#certifications">Certificates</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<header>
+<h1>Faiza Saleem</h1>
+<div class="typing" id="typing"></div>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>I am a dedicated and creative Graphic Designer and Digital Marketing enthusiast with a strong passion for visual storytelling and brand communication.</p>
+<p>I have completed certifications in Digital Marketing and Artificial Intelligence, allowing me to combine creativity with strategy.</p>
+<p>Currently pursuing MBBS at Services Institute of Medical Sciences, Lahore, I bring discipline, creativity, and strong work ethic to everything I do.</p>
+<p>I am eager to collaborate with clients and deliver high-quality, impactful designs.</p>
+</div>
+</section>
+
+<section id="portfolio">
+<h2>Portfolio</h2>
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="design2.png" alt="Medical Design">
+<div class="overlay">Healthcare Awareness Design</div>
+</div>
+
+</div>
+</section>
+
+<section id="services">
+<h2>Services</h2>
+<div class="services">
+<div class="service-box">Social Media Post Design</div>
+<div class="service-box">Branding & Visual Identity</div>
+<div class="service-box">Marketing Content Creation</div>
+<div class="service-box">Digital Marketing Strategy</div>
+</div>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill-box">Graphic Design</div>
+<div class="skill-box">Social Media Content</div>
+<div class="skill-box">Branding</div>
+<div class="skill-box">Digital Marketing</div>
+<div class="skill-box">Creative Thinking</div>
+<div class="skill-box">Communication</div>
+<div class="skill-box">Time Management</div>
+<div class="skill-box">AI Tools</div>
+</div>
+</section>
+
+<!-- ✅ FIXED CERTIFICATE SECTION -->
+<section id="certifications">
+<h2>Certifications</h2>
+
+<div class="gallery">
+
+<div class="gallery-item">
+<img src="cert1.png">
+<div class="overlay">Digital Marketing – Coursera</div>
+</div>
+
+<div class="gallery-item">
+<img src="cert2.png">
+<div class="overlay">Artificial Intelligence – Coursera</div>
+</div>
+
+<div class="gallery-item">
+<img src="badge.png">
+<div class="overlay">Coursera Badge</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<div class="card">
+<p><strong>Email:</strong> faizasaleem5656@gmail.com</p>
+<p><strong>Phone:</strong> 03286337031</p>
+<p>I am available for freelance projects and collaborations.</p>
+<a href="mailto:faizasaleem5656@gmail.com" class="btn">Get in Touch</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Faiza Saleem | Professional Portfolio</p>
+</footer>
+
+<script>
+new Typed('#typing',{
+strings:["Graphic Designer","Digital Marketer","AI Certified","Open for Freelance Work"],
+typeSpeed:50,backSpeed:30,loop:true
+});
+</script>
+
+</body>
+</html>
